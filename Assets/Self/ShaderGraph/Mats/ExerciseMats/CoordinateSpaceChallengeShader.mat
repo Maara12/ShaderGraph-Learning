@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TangentSpaceShader
-  m_Shader: {fileID: -6465566751694194690, guid: aea0b112ac71a9c47b4e8b221d62b4b7, type: 3}
+  m_Name: CoordinateSpaceChallengeShader
+  m_Shader: {fileID: -6465566751694194690, guid: ba4d107336f9f5546a948d382072808b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -51,16 +51,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: b2ff54caa14f320458474bd4763f330c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _normalTexture:
-        m_Texture: {fileID: 2800000, guid: b2ff54caa14f320458474bd4763f330c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -70,7 +70,9 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _Dirt_Level: 0.23
     - _DstBlend: 0
+    - _Forest_Level: 0.11
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -79,16 +81,23 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
+    - _Snow_Level: 0.34
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _Water_Level: 0.04
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DefaultColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    - _Dirt: {r: 0.735849, g: 0.57346535, b: 0.35959414, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Forest: {r: 0.44856375, g: 0.99215686, b: 0.30588233, a: 1}
+    - _Snow: {r: 1, g: 1, b: 1, a: 1}
+    - _Water: {r: 0.1566037, g: 1, b: 0.98544693, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &6680265376125450494
+--- !u!114 &7286154124770965047
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
